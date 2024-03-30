@@ -1,93 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: 	#051013;
+    min-height: 100vh;
+    background: linear-gradient(45deg, red, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div {
-    width: 300px;
-    margin: auto;
+.container {
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-width: 20rem;
+    margin: 0px 20px;
 }
 
-h1 {
-    color: #e81e4a;
-    font-family: cursive;
-    font-size: 65px;
+.title {
+    font-size: 5rem;
 }
 
-ul {
-    font-size: 20px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    font-family: cursive;
+.list {
+    width: 100%;
+    margin-bottom: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ababab;
+    border-radius: 20px;
+    padding: 5px;
 }
 
-li {
-    color: #ff7519;
-    list-style-type: square;
-    height: auto;
-    max-width: 160px;
+.list li {
+    width: 100%;
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin: 5px;
+    word-break: break-all;
+    display: flex;
+    align-items: center;
 }
 
-input {
-    width: 180px;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: cursive;
-    border-radius: 5px;
-    border-color: #e81e4a;
-    background-color: transparent;
-    padding-left: 10px;
-}
-
-button {
-    color: #ffffff;
-    font-size: 20px;
-    font-family: cursive;
+.deleteButton {
     border: none;
-    border-radius: 5px;
-    background-color: #e81e4a
+    background-color: transparent;
+    margin-right: 10px;
 }
 
-button:hover {
-    background-color: #eb365d
+.deleteButton:hover {
+    cursor: pointer;
 }
 
-button:active {
-    background-color: #e6758d
+.deleteButton {
+    margin-left: 5px;
+    font-size: 2rem;
 }
 
-hr#separate {
-    width: 300px;
-    height: 2px;
-    background-color: #ffffff;
-    border-radius: 5px;
+.text {
+    font-size: 2rem;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-hr.none {
-    background-color: #ff7519;
-    width: 50px;
-    font-family: cursive;
+.addTask {
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(123, 123, 247);
+    cursor: pointer;
+    transition: background .2s ease-in;
 }
 
-hr#none-1 {
-    margin-bottom: -15px;
+.addTask:hover {
+    background: rgb(70, 70, 255);
 }
 
-hr#none-2 {
-    margin-top: -15px;
-    margin-bottom: -10px;
-}
-
-hr#task-list {
-    margin-top: -50px;
-    margin-bottom: 50px;
-    height: 2px;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
-
-p {
-    color: #ff7519;
-    font-size: 20px;
-    font-family: cursive;
-    margin-left: 126px;
+.showElement {
+    display: flex;
 }

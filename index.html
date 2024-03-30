@@ -3,25 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Task List</title>
         <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
+        <title>Task List</title>
     </head>
     <body>
-        <div>
-            <h1>Task List</h1>
-            <hr id="task-list">
-            <div id="none">
-                <hr class="none" id="none-1">
-                <p>None</p>
-                <hr class="none" id="none-2">
-            </div>
-            <ul id="list"></ul>
-        </div>
-        <hr id="separate">
-        <div>
-            <input type="text" name="new-task" id="new-task" placeholder="Put task here" autofocus>
-            <button title="Click to add" name="add-new-task" onclick="addTask()">Add Task</button>
-        </div>
+        <main class="container">
+            <h1 class="title">Task List</h1>
+            <ul class="list"></ul>
+            <form action="/">
+                <input type="text" class="text" placeholder="Put new task here" autofocus>
+                <input type="submit" value="addTask" class="addTask">
+            </form>
+        </main>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/8e06853284.js" crossorigin="anonymous"></script>
     </body>
 </html>
